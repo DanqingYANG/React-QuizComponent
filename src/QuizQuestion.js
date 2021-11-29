@@ -1,3 +1,4 @@
+import QuizQuestionButton from './QuizQuestionButton'
 import React, { Component } from 'react' // imrc
 
 class QuizQuestion extends Component
@@ -12,9 +13,10 @@ class QuizQuestion extends Component
                 </section>
                 <section className="button">
                     <ul>
-                        <li>
+                        <QuizQuestionButton button_text = {this.props.quiz_question.answer_options[0]}/>
+                        {/* <li>
                             {this.props.quiz_question.answer_options[0]}
-                        </li>
+                        </li> */}
                     </ul>
                 </section>
             </main>
