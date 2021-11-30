@@ -17,8 +17,8 @@ class Quiz extends Component
         return(
             <div>
                 {/* instruction_text, add a prop named quiz_question that passes the value of the quizData.quiz_questions array at the state's quiz_position minus 1. */}
-                {isQuizEnd? <QuizEnd/> : ""}
-                <QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position-1]}/>
+                {isQuizEnd? <QuizEnd/> : 
+                <QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position-1]}/>}
             </div>
         )
     }
