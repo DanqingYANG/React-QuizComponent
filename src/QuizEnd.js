@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState, Component } from 'react'
 
 class QuizEnd extends Component{
     handleResetClick(){
@@ -14,5 +14,15 @@ class QuizEnd extends Component{
         )
     }
 }
+
+// const QuizEnd = (props) => {
+//     const [count, setCount] = useState(0);
+//     return(
+//         <div>
+//             <p>Thanks for playing!</p>
+//             <a href='' onClick={}>Reset Quiz</a>
+//         </div>
+//     )
+// }
 
 export default QuizEnd 

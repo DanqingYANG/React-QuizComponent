@@ -1,12 +1,8 @@
-import QuizQuestionButton from './QuizQuestionButton'
 import React, { Component } from 'react' // imrc
+import QuizQuestionButton from './QuizQuestionButton'
 
 class QuizQuestion extends Component
 {
-    // handleClick (buttonText){
-    //     this.props.quiz_question.answer === this.props.buttonText? this.props.showNextQuestionHandler():""
-    // }
-
     constructor(props){
         super(props)
         this.state = {incorrectAnswer: false}
@@ -46,4 +42,5 @@ class QuizQuestion extends Component
 //     return(
 //     )
 // }
+
 export default QuizQuestion
